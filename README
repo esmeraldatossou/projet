@@ -1,0 +1,50 @@
+
+1- JavaScript est un langage de programmation qui permet de rendre les sites web interactifs et dynamiques.
+2- Les medias query permettent d’appliquer les styles CSS différents selon que l’utilisateur est sur un mobile, une tablette ou un ordinateur. Voici un exemple de code :
+
+body {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+3- Les propriétés de CSS Grid
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}  
+4- Utilisation des pseudo-classes en CSS pour ajouter des styles spécifiques à un élément lorsqu'il est dans un certain état
+Styliser un élément au survol de la souris Balise : hover {Insérer la propriété CSS à appliquer}
+Styliser un élément au moment du clic Balise : active {Insérer la propriété CSS à appliquer}
+Styliser un élément sélectionné par le visiteur Balise : focus {Insérer la propriété CSS à appliquer}
+Styliser un lien hypertexte déjà consulté Balise : visited {Insérer la propriété CSS à appliquer}
+5- HTML signifie HyperText Markup Language (Langage de Balisage HyperTexte). C'est le langage de base utilisé pour créer la structure et le contenu des pages web, il permet de définir et organiser tout le contenu d'une page web.
+6- Les balises HTML de base
+La fondation de la page
+Toute page HTML commence pareil. Tu déclares que c'est du HTML5, puis tu as deux grandes zones : la tête (head) où tu mets les infos invisibles comme le titre de l'onglet, et le corps (body) où tu mets tout ce que les gens verront.
+Organiser ton texte
+Pour les titres, tu as six tailles différentes. H1 c'est le gros titre principal, comme le titre d'un journal. H2 c'est un sous-titre, et ainsi de suite jusqu'à H6. Pour le texte normal, tu utilises P comme paragraphe. Si tu veux mettre un mot en gras parce qu'il est important, tu utilises STRONG. Pour l'italique, c'est EM.
+Créer des listes
+Quand tu veux faire une liste de courses par exemple, tu utilises UL pour une liste à puces, ou OL si tu veux des numéros. Chaque article de ta liste est marqué avec LI.
+Ajouter des liens et des images
+Pour faire un lien cliquable vers un autre site ou une autre page, c'est la balise A avec l'adresse dans l'attribut href. Pour mettre une image, c'est IMG avec le chemin de l'image dans src et toujours une description dans alt pour les personnes malvoyantes.
+Organiser ta page comme un vrai site
+Les sites modernes utilisent des balises qui ont du sens. HEADER pour l'en-tête du site avec ton logo, NAV pour ton menu de navigation, MAIN pour le contenu principal, SECTION pour diviser ton contenu en parties, ARTICLE pour un article de blog ou une actualité, et FOOTER pour le pied de page. C'est comme les pièces d'une maison : chacune a sa fonction.
+Créer des formulaires
+Quand tu veux que les gens t'envoient des infos, tu crées un formulaire avec FORM. Dedans tu mets des INPUT pour les champs à remplir. Tu peux demander du texte, un email, un mot de passe, faire des cases à cocher, des boutons radio pour choisir une option. Tu ajoutes TEXTAREA pour un grand message et SELECT pour une liste déroulante. Le bouton BUTTON permet d'envoyer tout ça.
+Les tableaux
+Si tu veux présenter des données en tableau comme dans Excel, tu utilises TABLE. Chaque ligne c'est TR, chaque case c'est TD, et les titres de colonnes c'est TH.
+Les boîtes pour tout ranger
+DIV c'est comme une boîte invisible qui te permet de regrouper des éléments ensemble. C'est très pratique pour organiser ta page et appliquer du style. SPAN c'est pareil mais pour de petits bouts de texte à l'intérieur d'une ligne.
+7- Pour ajouter une image sur ta page web, tu utilises la balise <img>. C'est une balise particulière car elle n'a pas de balise de fermeture
+8- Pour créer un lien hypertexte, on utilise la balise <a> (qui signifie "anchor" = ancre en anglais). L'attribut href indique vers où le lien mène. 
+ 9- Le modèle de boîte est un concept fondamental en CSS. Il explique comment chaque élément HTML est représenté comme une boîte rectangulaire avec plusieurs couches autour de son contenu.
+Les 4 parties du modèle de boîte
+ 10- C’est le d) la valeur verticale
+11- Pour center un élément on utilise la propriété CSS Flexbox
+12- Le responsive design (ou design adaptatif) est une approche de conception web qui permet à un site de s'adapter automatiquement à la taille de l'écran sur lequel il est affiché. Que tu utilises un smartphone, une tablette ou un ordinateur, le site se réorganise pour offrir la meilleure expérience possible. Il est important pour le développement Web en ce sens qu’il permet au site web de fonctionner parfaitement sur tous les appareils.
+13- Les éléments block (comme div, p, h1) prennent toute la largeur disponible et commencent toujours sur une nouvelle ligne. On peut leur donner une largeur et hauteur précises.
+Les éléments inline (comme span, a, strong) ne prennent que l'espace nécessaire à leur contenu et restent sur la même ligne, comme des mots dans une phrase. On ne peut pas leur donner de largeur ou hauteur.
