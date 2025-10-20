@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ESCAE-BENIN</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .toast {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: rgb(122, 187, 233);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    #contactForm {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: whitesmoke;
+      border-radius: 10px;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      margin-bottom: 1rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    #contactForm button {
+      background-color: rgb(122, 187, 233);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #0d0d0d;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="position:fixed;top:0;left:0;width:100%;padding:1rem 2rem; background:#0d0d0d;z-index:10; display:flex;justify-content:space-between;align-items:center;">
+  <div class="logo" style="color: rgb(122, 187, 233);font-weight:600;font-size:1.2rem;letter-spacing:.05em;">ESCAE-BENIN</div>
+  <ul class="nav-links" style="display:flex;gap:2rem;margin:1rem 0;text-align:center;">
+    <li style="list-style:none;"><a href="#accueil" style="color:rgb(122, 187, 233);text-decoration:none;font-weight:600;">Accueil</a></li>
+    <li style="list-style:none;"><a href="#a-propos" style="color:rgb(122, 187, 233);text-decoration:none;font-weight:600;">À propos</a></li>
+    <li style="list-style:none;"><a href="#competences" style="color:rgb(122, 187, 233);text-decoration:none;font-weight:600;">Nos filières</a></li>
+    <li style="list-style:none;"><a href="#contact" style="color:rgb(122, 187, 233);text-decoration:none;font-weight:600;">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Présentation -->
+<section id="accueil" style="justify-content: center;">
+  <div style="margin:auto;">
+    <img src="acceuil.jpg" alt="image de présentation" style="margin:100px ;height: auto;">
+  </div>
+</section>
+
+<!-- À propos -->
+<section id="a-propos" style="background-color: whitesmoke;padding: 50px;">
+  <h2 style="text-align: center; color: rgb(122, 187, 233);">À propos</h2>
+  <div style="display: flex;align-items: center;justify-content: center;margin-top: 30px;">
+    <div style="max-width: 50%;">
+      <p><span style="color: rgb(122, 187, 233);">ESCAE-BENIN</span>Ecole Supérieure De Commerce Et D'Administration D'Entreprises Du Benin est une université privées qui acceuille les nouveaux bacheliers en leur offrant la possibilité de bénéficier d'une <span style="color: rgb(122, 187, 233);"><i>BOURSE</i></span> partiellement payante.<br></p>
+      <button style="background-color: rgb(122, 187, 233);margin:15px;height: 40px;width: 150px;border: none;">Voir plus</button>
+    </div>
+  </div>
+</section>
+
+<!-- Compétences -->
+<section id="competences" style="background-color:whitesmoke;padding: 50px;">
+  <h2 style="text-align:center;">Nos filières en SIL</h2>
+  <div style="display:flex;justify-content:space-around;flex-wrap:wrap;margin-top: 30px;">
+    <!-- Soft Skills -->
+    <div style="background:white;padding:20px;border-radius:10px;width:300px;">
+      <h3 style="text-align:center;">TC</h3>
+      <p>Droit</p>
+      <div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:90%;height:10px;background:rgb(122, 187, 233);border-radius:8px;"></div></div>
+      <p>Anglais</p>
+      <div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:50%;height:10px;background:rgb(122, 187, 233);border-radius:8px;"></div></div>
+      <p>Economie</p>
+      <div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:70%;height:10px;background:rgb(122, 187, 233);border-radius:8px;"></div></div>
+    </div>
+    <!-- Hard Skills -->
+    <div style="background:white;padding:20px;border-radius:10px;width:300px;">
+      <h3 style="text-align:center;">Spécialité</h3>
+      <p>HTML</p><div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:90%;background:rgb(122, 187, 233);height:10px;border-radius:8px;"></div></div>
+      <p>CSS</p><div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:75%;background:rgb(122, 187, 233);height:10px;border-radius:8px;"></div></div>
+      <p>Bootstrap</p><div style="background:#ddd;height:10px;border-radius:8px;"><div style="width:80%;background:rgb(122, 187, 233);height:10px;border-radius:8px;"></div></div>
+      <p>JS</p>
+<div style="background:#ddd;height:10px;border-radius:8px;">
+  <div style="width:65%;background:rgb(122, 187, 233);height:10px;border-radius:8px;"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="padding:50px;">
+  <h2 style="text-align:center;">Contactez-moi</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Votre nom" required />
+    <input type="email" placeholder="Votre email" required />
+    <textarea placeholder="Votre message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<!-- Toast de confirmation -->
+<div class="toast" id="toast">Message envoyé avec succès !</div>
+
+<!-- Footer -->
+<footer>
+  <div>&copy; 2025 Esméralda TOSSOU - Tous droits réservés.</div>
+  <div>Développé avec du HTML, CSS & JS</div>
+</footer>
+
+<!-- JS pour Toast -->
+<script>
+  const form = document.getElementById('contactForm');
+  const toast = document.getElementById('toast');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    toast.style.display = 'block';
+    setTimeout(() => {
+      toast.style.display = 'none';
+      form.reset();
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
